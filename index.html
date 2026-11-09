@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10172f">
+  <meta name="description" content="บทเรียนออนไลน์คณิตศาสตร์ ม.5 เรื่องฟังก์ชันเอกซ์โพเนนเชียลและฟังก์ชันลอการิทึม โดย Kru Miin">
+  <title>ฟังก์ชันเอกซ์โพเนนเชียลและลอการิทึม | ม.5 By Kru Miin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="กลับหน้าแรก">
+      <span class="brand-mark">M</span>
+      <span><strong>KRU MIIN</strong><small>MATHEMATICS • M.5</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home" class="nav-link active">หน้าหลัก</a>
+      <a href="#powers-review" class="nav-link">ทบทวนเลขยกกำลัง</a>
+      <a href="#exponential" class="nav-link">ฟังก์ชันเอกซ์โพเนนเชียล</a>
+      <a href="#logarithm" class="nav-link">ฟังก์ชันลอการิทึม</a>
+      <a href="#practice" class="nav-link">แบบทดสอบ</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">MATHEMATICS • GRADE 11</span>
+          <h1>เข้าใจเลขยกกำลัง<br><span>ต่อยอดสู่ลอการิทึม</span></h1>
+          <p class="hero-lead">เรียนรู้แนวคิด สำรวจกราฟ จดจำสมบัติ และฝึกทำโจทย์ด้วยตนเอง ในบทเรียนออนไลน์คณิตศาสตร์ชั้นมัธยมศึกษาปีที่ 5</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#exponential">เริ่มเรียนรู้ <span>→</span></a>
+            <a class="btn btn-ghost" href="#practice">ทำแบบทดสอบ</a>
+          </div>
+          <div class="hero-meta"><span class="meta-dot"></span> เรียนรู้ได้ทุกที่ ทุกเวลา • By Kru Miin</div>
+        </div>
+        <div class="hero-art" aria-label="ภาพประกอบกราฟฟังก์ชันทางคณิตศาสตร์">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="math-card">
+            <span class="math-label">EXPONENTIAL</span>
+            <div class="formula">y = a<sup>x</sup></div>
+            <div class="mini-graph"><svg viewBox="0 0 300 150" role="img" aria-label="กราฟเอกซ์โพเนนเชียล"><path d="M12 126H288M35 12V138" class="axis"/><path d="M35 118 C95 117 130 112 158 98 S220 48 274 12" class="curve exp-curve"/></svg></div>
+            <div class="math-label bottom-label">GROWTH • DECAY • CHANGE</div>
+          </div>
+          <div class="float-chip chip-top">log<sub>a</sub> x</div>
+          <div class="float-chip chip-bottom">a<sup>m</sup> × a<sup>n</sup></div>
+        </div>
+      </div>
+      <div class="hero-bottom"><span>01 / 02</span><span>EXPLORE THE POWER OF MATHEMATICS</span><span>SCROLL TO LEARN ↓</span></div>
+    </section>
+
+    <section class="intro section-wrap">
+      <div class="section-kicker">YOUR LEARNING JOURNEY</div>
+      <div class="intro-row">
+        <h2>สองแนวคิดสำคัญ<br>ที่เชื่อมโยงกัน</h2>
+        <p>ฟังก์ชันเอกซ์โพเนนเชียลอธิบายการเปลี่ยนแปลงที่ตัวแปรอยู่บนเลขชี้กำลัง ส่วนฟังก์ชันลอการิทึมเป็นฟังก์ชันผกผันที่ช่วยหาค่าเลขชี้กำลังนั้น</p>
+      </div>
+      <div class="topic-cards">
+        <a class="topic-card topic-card-gold" href="#powers-review"><span class="topic-number">00</span><div class="topic-icon">xⁿ</div><h3>Review: Exponents</h3><p>ทบทวนความหมาย ชนิดของเลขชี้กำลัง และสมบัติที่จำเป็นก่อนเรียนบทใหม่</p><span class="card-link">ทบทวนพื้นฐาน <b>→</b></span></a>
+        <a class="topic-card" href="#exponential"><span class="topic-number">01</span><div class="topic-icon">↗</div><h3>Exponential Function</h3><p>ทำความเข้าใจฐาน เลขชี้กำลัง กราฟ และสมบัติของฟังก์ชัน</p><span class="card-link">เข้าสู่บทเรียน <b>→</b></span></a>
+        <a class="topic-card topic-card-purple" href="#logarithm"><span class="topic-number">02</span><div class="topic-icon">⌁</div><h3>Logarithmic Function</h3><p>เรียนรู้ความหมาย เงื่อนไข สมบัติ และความสัมพันธ์กับเอกซ์โพเนนเชียล</p><span class="card-link">เข้าสู่บทเรียน <b>→</b></span></a>
+        <a class="topic-card topic-card-gold" href="#practice"><span class="topic-number">03</span><div class="topic-icon">✓</div><h3>Practice & Quiz</h3><p>ทบทวนความเข้าใจผ่านแบบทดสอบ พร้อมตรวจคำตอบและดูคะแนนทันที</p><span class="card-link">เริ่มทำแบบทดสอบ <b>→</b></span></a>
+      </div>
+    </section>
+
+
+    <section class="lesson-section powers-review" id="powers-review">
+      <div class="section-wrap">
+        <div class="section-kicker">FOUNDATION / REVIEW</div>
+        <div class="lesson-heading">
+          <div><h2>ทบทวนความรู้เรื่องเลขยกกำลัง</h2><p>Exponents Review • พื้นฐานสำคัญก่อนเรียนฟังก์ชันเอกซ์โพเนนเชียล</p></div>
+          <span class="lesson-tag gold-tag">บททบทวน 00</span>
+        </div>
+        <div class="lesson-grid">
+          <article class="lesson-main">
+            <h3>1. ความหมายของเลขยกกำลัง</h3>
+            <p>เลขยกกำลังเป็นการเขียนแทนการคูณจำนวนเดียวกันซ้ำ ๆ โดยมีรูปทั่วไปดังนี้</p>
+            <div class="formula-box gold-formula"><span>a<sup>n</sup> = a × a × … × a</span><small>คูณ a ทั้งหมด n ตัว</small></div>
+            <p>เรียก <b>a</b> ว่า ฐาน (Base) และ <b>n</b> ว่า เลขชี้กำลัง (Exponent)</p>
+            <div class="example-box gold-example">
+              <b>ตัวอย่าง</b>
+              <p>3<sup>4</sup> = 3 × 3 × 3 × 3 = 81</p>
+              <p>ฐานคือ 3 และเลขชี้กำลังคือ 4</p>
+            </div>
+
+            <h3>2. ชนิดของเลขชี้กำลัง</h3>
+            <div class="exponent-types">
+              <div><span class="type-badge">จำนวนเต็มบวก</span><b>2<sup>3</sup> = 8</b><small>คูณฐานซ้ำ 3 ตัว</small></div>
+              <div><span class="type-badge">เลขชี้กำลังศูนย์</span><b>5<sup>0</sup> = 1</b><small>เมื่อฐานไม่เท่ากับศูนย์</small></div>
+              <div><span class="type-badge">จำนวนเต็มลบ</span><b>2<sup>−3</sup> = 1/8</b><small>เขียนเป็นส่วนกลับของกำลังบวก</small></div>
+              <div><span class="type-badge">เศษส่วน</span><b>8<sup>1/3</sup> = 2</b><small>สัมพันธ์กับรากที่ n</small></div>
+            </div>
+
+            <h3>3. สมบัติของเลขยกกำลัง</h3>
+            <p>เมื่อ a และ b เป็นจำนวนที่เหมาะสมตามเงื่อนไขของแต่ละสมบัติ และ m, n เป็นจำนวนเต็ม จะได้ว่า</p>
+            <div class="power-rules">
+              <div><span class="rule-no">01</span><div><b>การคูณเลขยกกำลังฐานเดียวกัน</b><span>a<sup>m</sup> × a<sup>n</sup> = a<sup>m+n</sup></span></div></div>
+              <div><span class="rule-no">02</span><div><b>การหารเลขยกกำลังฐานเดียวกัน</b><span>a<sup>m</sup> ÷ a<sup>n</sup> = a<sup>m−n</sup> (a ≠ 0)</span></div></div>
+              <div><span class="rule-no">03</span><div><b>กำลังของเลขยกกำลัง</b><span>(a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup></span></div></div>
+              <div><span class="rule-no">04</span><div><b>กำลังของผลคูณ</b><span>(ab)<sup>n</sup> = a<sup>n</sup>b<sup>n</sup></span></div></div>
+              <div><span class="rule-no">05</span><div><b>กำลังของผลหาร</b><span>(a/b)<sup>n</sup> = a<sup>n</sup>/b<sup>n</sup> (b ≠ 0)</span></div></div>
+              <div><span class="rule-no">06</span><div><b>เลขชี้กำลังศูนย์</b><span>a<sup>0</sup> = 1 (a ≠ 0)</span></div></div>
+              <div><span class="rule-no">07</span><div><b>เลขชี้กำลังเป็นจำนวนเต็มลบ</b><span>a<sup>−n</sup> = 1/a<sup>n</sup> (a ≠ 0)</span></div></div>
+              <div><span class="rule-no">08</span><div><b>เลขชี้กำลังเป็นเศษส่วน</b><span>a<sup>m/n</sup> = <sup>n</sup>√(a<sup>m</sup>)</span></div></div>
+            </div>
+            <div class="callout gold-callout"><b>ข้อควรจำ</b><br>การคูณและการหารจะรวมเลขชี้กำลังได้เมื่อฐานเหมือนกันเท่านั้น และห้ามหารด้วยศูนย์</div>
+
+            <h3>4. ตัวอย่างการใช้สมบัติ</h3>
+            <div class="worked-examples">
+              <div><b>ตัวอย่างที่ 1</b><p>2<sup>3</sup> × 2<sup>4</sup> = 2<sup>3+4</sup> = 2<sup>7</sup> = 128</p><small>คูณฐานเดียวกัน จึงนำเลขชี้กำลังมาบวกกัน</small></div>
+              <div><b>ตัวอย่างที่ 2</b><p>3<sup>5</sup> ÷ 3<sup>2</sup> = 3<sup>5−2</sup> = 3<sup>3</sup> = 27</p><small>หารฐานเดียวกัน จึงนำเลขชี้กำลังมาลบกัน</small></div>
+              <div><b>ตัวอย่างที่ 3</b><p>4<sup>−2</sup> = 1/4<sup>2</sup> = 1/16</p><small>เลขชี้กำลังติดลบ เปลี่ยนเป็นส่วนกลับ</small></div>
+            </div>
+          </article>
+          <aside class="lesson-aside">
+            <div class="aside-card gold-aside">
+              <span class="aside-icon">✎</span>
+              <h3>สรุปจำง่าย</h3>
+              <div class="quick-memory">
+                <p><b>คูณ</b><span>ฐานเหมือนกัน → บวกเลขชี้กำลัง</span></p>
+                <p><b>หาร</b><span>ฐานเหมือนกัน → ลบเลขชี้กำลัง</span></p>
+                <p><b>ยกกำลังซ้อน</b><span>นำเลขชี้กำลังมาคูณกัน</span></p>
+                <p><b>กำลังลบ</b><span>เปลี่ยนเป็นส่วนกลับ</span></p>
+                <p><b>กำลังศูนย์</b><span>มีค่าเท่ากับ 1 เมื่อฐานไม่เป็นศูนย์</span></p>
+              </div>
+            </div>
+            <div class="aside-card">
+              <span class="aside-icon">◎</span>
+              <h3>ลองคิดก่อนเรียนต่อ</h3>
+              <div class="review-check">
+                <p><b>1)</b> 2<sup>2</sup> × 2<sup>3</sup> มีค่าเท่าใด?</p>
+                <details><summary>ดูแนวคำตอบ</summary><p>2<sup>5</sup> = 32 เพราะคูณฐานเดียวกันให้นำเลขชี้กำลังมาบวกกัน</p></details>
+                <p><b>2)</b> 10<sup>−2</sup> เขียนเป็นเศษส่วนได้อย่างไร?</p>
+                <details><summary>ดูแนวคำตอบ</summary><p>1/10<sup>2</sup> = 1/100</p></details>
+                <p><b>3)</b> (3<sup>2</sup>)<sup>3</sup> มีค่าเท่าใด?</p>
+                <details><summary>ดูแนวคำตอบ</summary><p>3<sup>6</sup> = 729 เพราะนำเลขชี้กำลังมาคูณกัน</p></details>
+              </div>
+            </div>
+            <div class="callout gold-callout"><b>พร้อมแล้วหรือยัง?</b><br>เมื่อเข้าใจสมบัติเลขยกกำลังแล้ว ไปเรียนรู้ฟังก์ชันที่มีตัวแปรอยู่บนเลขชี้กำลังกันต่อได้เลย</div>
+            <a class="btn btn-primary review-next" href="#exponential">ไปบทเรียนฟังก์ชันเอกซ์โพเนนเชียล →</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="lesson-section" id="exponential">
+      <div class="section-wrap">
+        <div class="section-kicker">LESSON 01 / EXPONENTIAL</div>
+        <div class="lesson-heading"><div><h2>ฟังก์ชันเอกซ์โพเนนเชียล</h2><p>Exponential Function</p></div><span class="lesson-tag">บทเรียนที่ 1</span></div>
+        <div class="lesson-grid">
+          <article class="lesson-main">
+            <h3>ความหมายของฟังก์ชันเอกซ์โพเนนเชียล</h3>
+            <p>ฟังก์ชันเอกซ์โพเนนเชียล คือ ฟังก์ชันที่เขียนได้ในรูป</p>
+            <div class="formula-box"><span>f(x) = a<sup>x</sup></span><small>เมื่อ a &gt; 0 และ a ≠ 1</small></div>
+            <p>โดย <b>a</b> เรียกว่า ฐาน (Base) และ <b>x</b> เป็นเลขชี้กำลัง ซึ่งเป็นตัวแปร</p>
+            <div class="callout"><b>จำให้แม่น!</b><br>ฐานต้องเป็นจำนวนจริงบวก และต้องไม่เท่ากับ 1</div>
+            <h3>ลักษณะกราฟ</h3>
+            <div class="graph-panel">
+              <div class="graph-title"><span>เปรียบเทียบกราฟเมื่อฐานต่างกัน</span><span class="graph-legend"><i class="legend-growth"></i> a &gt; 1 <i class="legend-decay"></i> 0 &lt; a &lt; 1</span></div>
+              <svg viewBox="0 0 520 245" class="large-graph" role="img" aria-label="กราฟฟังก์ชันเอกซ์โพเนนเชียลแบบเพิ่มและลด">
+                <defs><pattern id="grid" width="40" height="30" patternUnits="userSpaceOnUse"><path d="M40 0H0V30" fill="none" stroke="#e8ebf3" stroke-width="1"/></pattern></defs>
+                <rect x="30" y="10" width="470" height="210" fill="url(#grid)"/>
+                <path d="M30 190H500M265 10V220" class="chart-axis"/>
+                <path d="M45 188 C155 188 205 178 265 160 S370 86 485 16" class="chart-growth"/>
+                <path d="M45 20 C145 90 205 139 265 160 S390 188 485 190" class="chart-decay"/>
+                <circle cx="265" cy="160" r="4" fill="#fff" stroke="#263f91" stroke-width="2"/>
+                <text x="492" y="207" class="chart-text">x</text><text x="275" y="17" class="chart-text">y</text><text x="274" y="176" class="chart-text">(0,1)</text>
+              </svg>
+              <p class="graph-note">กราฟทั้งสองผ่านจุด (0, 1) และมีเส้นกำกับแนวนอน y = 0</p>
+            </div>
+            <h3>สมบัติที่ควรรู้</h3>
+            <ul class="check-list">
+              <li>โดเมนเป็นจำนวนจริงทั้งหมด</li>
+              <li>เรนจ์เป็นจำนวนจริงบวก (y &gt; 0)</li>
+              <li>กราฟผ่านจุด (0, 1)</li>
+              <li>ถ้า a &gt; 1 กราฟเป็นฟังก์ชันเพิ่ม</li>
+              <li>ถ้า 0 &lt; a &lt; 1 กราฟเป็นฟังก์ชันลด</li>
+            </ul>
+          </article>
+          <aside class="lesson-aside">
+            <div class="aside-card"><span class="aside-icon">✦</span><h3>ตัวอย่าง</h3><p>กำหนดให้ f(x) = 2<sup>x</sup></p><div class="value-table"><div><span>x</span><span>f(x)</span></div><div><span>-2</span><b>1/4</b></div><div><span>-1</span><b>1/2</b></div><div><span>0</span><b>1</b></div><div><span>1</span><b>2</b></div><div><span>2</span><b>4</b></div></div><p class="aside-note">เมื่อ x เพิ่มขึ้น ค่า f(x) เพิ่มขึ้นอย่างรวดเร็ว</p></div>
+            <div class="aside-card formula-aside"><span class="aside-icon">∑</span><h3>สมบัติเลขยกกำลัง</h3><ul><li>a<sup>m</sup> · a<sup>n</sup> = a<sup>m+n</sup></li><li>a<sup>m</sup> / a<sup>n</sup> = a<sup>m−n</sup></li><li>(a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup></li><li>a<sup>0</sup> = 1</li></ul></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="lesson-section log-section" id="logarithm">
+      <div class="section-wrap">
+        <div class="section-kicker">LESSON 02 / LOGARITHM</div>
+        <div class="lesson-heading"><div><h2>ฟังก์ชันลอการิทึม</h2><p>Logarithmic Function</p></div><span class="lesson-tag purple-tag">บทเรียนที่ 2</span></div>
+        <div class="lesson-grid">
+          <article class="lesson-main">
+            <h3>ความหมายของลอการิทึม</h3>
+            <p>ลอการิทึมเป็นการเขียนอีกแบบหนึ่งของเลขยกกำลัง ใช้ตอบคำถามว่า “ต้องยกกำลังฐานเท่าใด จึงจะได้ผลลัพธ์ที่กำหนด”</p>
+            <div class="formula-box purple-formula"><span>log<sub>a</sub> x = y</span><small>ก็ต่อเมื่อ a<sup>y</sup> = x</small></div>
+            <p>เมื่อ <b>a &gt; 0, a ≠ 1 และ x &gt; 0</b></p>
+            <div class="example-box"><b>ตัวอย่าง</b><p>เพราะ 2<sup>3</sup> = 8 ดังนั้น log<sub>2</sub> 8 = 3</p><p>อ่านว่า ลอการิทึมฐาน 2 ของ 8 มีค่าเท่ากับ 3</p></div>
+            <h3>สมบัติของลอการิทึม</h3>
+            <div class="property-grid">
+              <div><b>ผลคูณ</b><span>log<sub>a</sub>(MN) = log<sub>a</sub>M + log<sub>a</sub>N</span></div>
+              <div><b>ผลหาร</b><span>log<sub>a</sub>(M/N) = log<sub>a</sub>M − log<sub>a</sub>N</span></div>
+              <div><b>เลขชี้กำลัง</b><span>log<sub>a</sub>(M<sup>r</sup>) = r log<sub>a</sub>M</span></div>
+              <div><b>เปลี่ยนฐาน</b><span>log<sub>a</sub>M = log<sub>b</sub>M / log<sub>b</sub>a</span></div>
+            </div>
+            <div class="callout purple-callout"><b>ข้อควรระวัง</b><br>จำนวนที่อยู่ภายในเครื่องหมายลอการิทึมต้องเป็นจำนวนจริงบวกเท่านั้น</div>
+            <h3>ความสัมพันธ์ของฟังก์ชันทั้งสอง</h3>
+            <p>ฟังก์ชันเอกซ์โพเนนเชียลและฟังก์ชันลอการิทึมเป็นฟังก์ชันผกผันกัน กราฟจึงสะท้อนกันบนเส้นตรง y = x</p>
+            <div class="inverse-diagram"><div class="inverse-formula">a<sup>y</sup> = x <span>⇄</span> log<sub>a</sub> x = y</div><small>เอกซ์โพเนนเชียล ↔ ลอการิทึม</small></div>
+          </article>
+          <aside class="lesson-aside">
+            <div class="aside-card purple-aside"><span class="aside-icon">⌁</span><h3>ค่าพื้นฐานที่ควรจำ</h3><div class="value-table"><div><span>รูปแบบ</span><span>คำตอบ</span></div><div><span>log<sub>a</sub> 1</span><b>0</b></div><div><span>log<sub>a</sub> a</span><b>1</b></div><div><span>log<sub>a</sub> a<sup>n</sup></span><b>n</b></div><div><span>a<sup>logₐx</sup></span><b>x</b></div></div></div>
+            <div class="aside-card"><span class="aside-icon">◎</span><h3>ขั้นตอนคิดโจทย์</h3><ol class="number-list"><li>ระบุฐานและจำนวนภายใน log</li><li>ตรวจสอบเงื่อนไขให้ครบ</li><li>เลือกใช้สมบัติที่เหมาะสม</li><li>ตรวจคำตอบกับเงื่อนไขเดิม</li></ol></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="quiz-section" id="practice">
+      <div class="section-wrap">
+        <div class="section-kicker">CHECK YOUR UNDERSTANDING</div>
+        <div class="quiz-heading"><div><h2>ท้าทายความเข้าใจ</h2><p>แบบทดสอบท้ายบท • 10 ข้อ • เลือกคำตอบที่ถูกต้องที่สุด</p></div><div class="quiz-stamp">QUIZ<br><b>01—10</b></div></div>
+        <div class="quiz-shell">
+          <div class="quiz-top"><div><span class="quiz-label">YOUR PROGRESS</span><strong id="progressText">ข้อ 1 จาก 10</strong></div><span class="score-live" id="answeredText">ตอบแล้ว 0/10</span></div>
+          <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+          <div id="quizContent" class="quiz-content" aria-live="polite"></div>
+          <div class="quiz-controls"><button class="btn btn-ghost dark-ghost" id="prevBtn" disabled>← ก่อนหน้า</button><button class="btn btn-primary" id="nextBtn">ข้อต่อไป →</button><button class="btn btn-primary" id="submitBtn" hidden>ส่งคำตอบ</button></div>
+          <div id="quizResult" class="quiz-result" hidden aria-live="polite"></div>
+        </div>
+        <p class="quiz-footnote">คำแนะนำ: ลองทำด้วยตนเองก่อนส่งคำตอบ ระบบจะแสดงคะแนนและเฉลยหลังส่งแบบทดสอบ</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span class="brand-mark">M</span><div><strong>KRU MIIN</strong><small>MATHEMATICS LEARNING SPACE</small></div></div>
+    <p>เรียนรู้ เข้าใจ และนำคณิตศาสตร์ไปใช้ได้จริง</p>
+    <span class="copyright">© 2026 By Kru Miin • Exponential & Logarithmic Functions</span>
+  </footer>
+  <button id="backToTop" class="back-top" aria-label="กลับขึ้นด้านบน">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
